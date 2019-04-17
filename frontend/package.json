@@ -1,13 +1,10 @@
 {
-  "name": "video-website",
+  "name": "video-website-frontend",
   "version": "1.0.0",
-  "description": "A Video Website",
+  "description": "A Video Website Frontend",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
-  },
-  "dependencies": {
-    "mysql": "^2.16.0"
   },
   "devDependencies": {
     "electron": "^4.1.4"

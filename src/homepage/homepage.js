@@ -1,6 +1,6 @@
-loginButton = document.getElementById('login button');
+btn = document.getElementById('homepage-button');
 
-loginButton.addEventListener('click', () => {
+btn.addEventListener('click', () => {
     alert('Hi');
     const request = new XMLHttpRequest();
 
@@ -12,7 +12,8 @@ loginButton.addEventListener('click', () => {
         }
     };
 
-    request.open('GET', 'https://localhost/');
+    request.open('GET', '/login');
     request.send();
-
+    window.location.href='/login';
+    //window.navigate('/login');
 }, false);

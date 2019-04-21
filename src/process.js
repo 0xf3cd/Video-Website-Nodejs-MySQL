@@ -17,9 +17,9 @@ app.use(bodyParser.json());
 const router = express.Router();
 
 router.use((req, res, next) => {
-    // 輸出記錄訊息至終端機
+    // 输出记录信息到终端
     console.log(req.method, req.url);
-    // 繼續路由處理
+    // 继续路由处理
     next();
 });
 
@@ -29,6 +29,12 @@ router.get('/favicon.ico', (req, res) => {
     res.sendFile('/images.png', {root: __dirname});
     // res.status(200).send('home page!');
     // res.status(200).send('Welcome to Safety Land!');
+});
+
+router.post('/authenticate', (req, res) => {
+    const data = req.body;
+    console.log(data);
+    authenticate.isValid(res, data);    
 });
 
 app.use(express.static('homepage'));
@@ -44,12 +50,6 @@ app.use(express.static('login'));
 router.get('/login', (req, res) => {
     // res.send('login page!');
     res.sendFile('/login/login.html', {root: __dirname});
-});
-
-router.post('/authenticate', (req, res) => {
-    const data = req.body;
-    console.log(data);
-    authenticate.isValid(res, data);    
 });
 
 app.use('/', router);

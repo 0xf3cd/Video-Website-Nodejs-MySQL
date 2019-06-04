@@ -12,7 +12,7 @@ p {
 body {  
     margin: 0;  
     padding: 0;  
-    background: #292831;  
+    background: #222129;  
     font-weight: 500;  
     font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;  
 }  
@@ -27,7 +27,7 @@ form {
     width: 300px;  
     margin: 0 auto;  
 }  
-input {  
+input, button {  
     border: none;  
     outline: none;  
 }  
@@ -68,7 +68,7 @@ input {
     width: 40%;
     float:left;
     /* height: 100px; */
-    background-color: #292831;
+    background-color: #222129;
     text-align: center;
     /* position: relative; */
     /* border: 1px solid #3B6273; */
@@ -109,5 +109,5 @@ input {
     position: relative;
     top: 20px;
     left: 170px;
-    background-color: white;
+    background-color: #F9F0DA;
 }

@@ -12,7 +12,8 @@ p {
 body {  
     margin: 0;  
     padding: 0;  
-    background: #292831;  
+    /* background: #292831;   */
+    background: #222129;  
     font-weight: 500;  
     font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;  
 }  
@@ -27,7 +28,7 @@ form {
     width: 300px;  
     margin: 0 auto;  
 }  
-input {  
+input, button {  
     border: none;  
     outline: none;  
 }  
@@ -37,38 +38,37 @@ input {
     padding-left: 13px;  
     padding-right:46px;  
 }  
-/* button {  
+button {  
     height: 42px;  
     width: 42px;  
     cursor: pointer;  
     position: absolute;  
-}   */
+}  
 /*搜索框4*/  
 .bar4 {background: #fed94d;}  
 .bar4 form {  
     background: #F9F0DA;
     border-bottom: 2px solid #e7a1e1;  
 }  
-/* .bar4 input, .bar4 button {   */
-.bar4 input {  
+.bar4 input, .bar4 button {  
     background: transparent;  
 }  
-/* .bar4 button {  
+.bar4 button {  
     top: 0;  
     right: 0;  
-}   */
-/* .bar4 button:before {  
+}  
+.bar4 button:before {  
     content: "\f178";  
     font-family: FontAwesome;  
     font-size: 20px;  
     color: #e7a1e1;  
-}   */
+}  
 
 .up {
     width: 40%;
     float:left;
     /* height: 100px; */
-    background-color: #292831;
+    background-color: #222129;
     text-align: center;
     /* position: relative; */
     /* border: 1px solid #3B6273; */
@@ -84,30 +84,4 @@ input {
 #icon {
     position: relative;
     top:180px;
-}
-
-.login-button {
-    width: 100px;
-    height: 40px;
-    border-radius: 30px;
-    font-family: "Avenir";
-    font-size: 1em;
-    outline: none;
-    position: relative;
-    top: 20px;
-    left: 120px;
-    background-color: #e7a1e1;
-}
-
-.register-button {
-    width: 100px;
-    height: 40px;
-    border-radius: 30px;
-    font-family: "Avenir";
-    font-size: 1em;
-    outline: none;
-    position: relative;
-    top: 20px;
-    left: 170px;
-    background-color: white;
 }

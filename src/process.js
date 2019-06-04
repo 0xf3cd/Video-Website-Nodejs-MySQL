@@ -37,6 +37,11 @@ router.post('/authenticate', (req, res) => {
     authenticate.isValid(res, data);    
 });
 
+router.post('/register', (req, res) => {
+    const data = req.body;
+    console.log(data);
+});
+
 app.use(express.static('homepage'));
 router.get('/', (req, res) => {
     // res.writeHead(200, {'Content-Type': 'text/html'});
@@ -50,6 +55,12 @@ app.use(express.static('login'));
 router.get('/login', (req, res) => {
     // res.send('login page!');
     res.sendFile('/login/login.html', {root: __dirname});
+});
+
+app.use(express.static('register'));
+router.get('/register', (req, res) => {
+    // res.send('login page!');
+    res.sendFile('/register/reg.html', {root: __dirname});
 });
 
 app.use('/', router);

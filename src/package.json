@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "A Video Website Backend",
     "dependencies": {
-        "express": "^4.16.4",
+        "express": "^4.17.3",
         "mysql": "^2.16.0"
     },
     "devDependencies": {
